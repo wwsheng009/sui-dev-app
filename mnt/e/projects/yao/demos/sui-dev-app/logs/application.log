@@ -1,6 +1,0 @@
-time="2024-07-31T14:41:49+08:00" level=error msg="[disk.Walk] E:\\projects\\yao\\demos\\sui-dev-app\\certs CreateFile E:\\projects\\yao\\demos\\sui-dev-app\\certs: The system cannot find the file specified."
-time="2024-07-31T14:41:49+08:00" level=error msg="primary-0 error unable to open database file: The system cannot find the path specified."
-time="2024-07-31T14:41:49+08:00" level=info msg="[V8] initialize mode: standard"
-time="2024-08-02T10:12:52+08:00" level=error msg="[disk.Walk] E:\\projects\\yao\\demos\\sui-dev-app\\certs CreateFile E:\\projects\\yao\\demos\\sui-dev-app\\certs: The system cannot find the file specified."
-time="2024-08-02T10:12:52+08:00" level=error msg="primary-0 error unable to open database file: The system cannot find the path specified."
-time="2024-08-02T10:12:52+08:00" level=info msg="[V8] initialize mode: standard"
