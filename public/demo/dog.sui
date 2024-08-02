@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="en" class="dark scroll-smooth" dir="ltr"><head>
+  <meta charset="UTF-8"/>
+  <title>
+    Yao Blog
+  </title>
+  <meta property="og:title" content="The Rock"/>
+  <meta property="og:type" content="movie"/>
+  <meta property="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+  <meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content="yao"/>
+  <meta name="keywords" content="agency, application, business, clean, creative, cryptocurrency, it solutions, modern, multipurpose, nft marketplace, portfolio, saas, software, tailwind css"/>
+  <meta name="author" content="Shreethemes"/>
+  <meta name="website" content="https://shreethemes.in"/>
+  <meta name="email" content="support@shreethemes.in"/>
+  <meta name="version" content="2.0.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+
+
+  <!-- favicon -->
+
+  <!-- CSS -->
+
+  <!-- Main Css -->
+
+  <!-- <link rel="stylesheet" href="/demo/assets/css/tailwind.min.css" /> -->
+
+
+<script name="sui" type="text/javascript">var __async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
+function $$(selector) {
+  elm = null;
+  if (typeof selector === "string") {
+    elm = document.querySelector(selector);
+  }
+  if (selector instanceof HTMLElement) {
+    elm = selector;
+  }
+  if (elm) {
+    cn = elm.getAttribute("s:cn");
+    if (cn != "" && typeof window[cn] === "function") {
+      const component = new window[cn](elm);
+      return new __sui_component(elm, component);
+    }
+  }
+  return null;
+}
+const $utils = {
+  RemoveClass: (element, className) => {
+    const classes = Array.isArray(className) ? className : className.split(" ");
+    classes.forEach((c) => {
+      const v = c.replace(/[\n\r\s]/g, "");
+      if (v === "")
+        return;
+      element.classList.remove(v);
+    });
+  },
+  AddClass: (element, className) => {
+    const classes = Array.isArray(className) ? className : className.split(" ");
+    classes.forEach((c) => {
+      const v = c.replace(/[\n\r\s]/g, "");
+      if (v === "")
+        return;
+      element.classList.add(v);
+    });
+  }
+};
+function __sui_component_root(elm2, name) {
+  while (elm2 && elm2.getAttribute("s:cn") !== name) {
+    elm2 = elm2.parentElement;
+  }
+  return elm2;
+}
+function __sui_state(component) {
+  this.handlers = component.watch || {};
+  this.Set = function(key, value, target) {
+    return __async(this, null, function* () {
+      const handler = this.handlers[key];
+      target = target || component.root;
+      if (handler && typeof handler === "function") {
+        const stateObj = {
+          target,
+          stopPropagation: function() {
+            target.setAttribute("state-propagation", "true");
+          }
+        };
+        yield handler(value, stateObj);
+        const isStopPropagation = target ? target.getAttribute("state-propagation") === "true" : false;
+        if (isStopPropagation) {
+          return;
+        }
+        let parent = component.root.parentElement;
+        while (parent && !parent.getAttribute("s:cn")) {
+          parent = parent.parentElement;
+        }
+        if (parent == document.body || parent == null) {
+          return;
+        }
+        const event = new CustomEvent("state:change", { detail: { key, value, target: component.root } });
+        parent.dispatchEvent(event);
+      }
+    });
+  };
+}
+function __sui_props(elm2) {
+  this.Get = function(key) {
+    if (!elm2 || typeof elm2.getAttribute !== "function") {
+      return null;
+    }
+    const k = "prop:" + key;
+    const v = elm2.getAttribute(k);
+    const json = elm2.getAttribute("json-attr-prop:" + key) === "true";
+    if (json) {
+      try {
+        return JSON.parse(v);
+      } catch (e) {
+        return null;
+      }
+    }
+    return v;
+  };
+  this.List = function() {
+    const props = {};
+    if (!elm2 || typeof elm2.getAttribute !== "function") {
+      return props;
+    }
+    const attrs = elm2.attributes;
+    for (let i = 0; i < attrs.length; i++) {
+      const attr = attrs[i];
+      if (attr.name.startsWith("prop:")) {
+        const k = attr.name.replace("prop:", "");
+        const json = elm2.getAttribute("json-attr-prop:" + k) === "true";
+        if (json) {
+          try {
+            props[k] = JSON.parse(attr.value);
+          } catch (e) {
+            props[k] = null;
+          }
+          continue;
+        }
+        props[k] = attr.value;
+      }
+    }
+    return props;
+  };
+}
+function __sui_component(elm2, component) {
+  this.root = elm2;
+  this.store = new __sui_store(elm2);
+  this.props = new __sui_props(elm2);
+  this.state = component ? new __sui_state(component) : {};
+}
+function __sui_event_handler(event, dataKeys, jsonKeys, target, root, handler) {
+  const data = {};
+  target = target || null;
+  if (target) {
+    dataKeys.forEach(function(key) {
+      const value = target.getAttribute("data:" + key);
+      data[key] = value;
+    });
+    jsonKeys.forEach(function(key) {
+      const value = target.getAttribute("json:" + key);
+      data[key] = null;
+      if (value && value != "") {
+        try {
+          data[key] = JSON.parse(value);
+        } catch (e) {
+          const message = e.message || e || "An error occurred";
+          console.error(`[SUI] Event Handler Error: ${message}`, target);
+        }
+      }
+    });
+  }
+  handler && handler(event, data, {
+    rootElement: root,
+    targetElement: target
+  });
+}
+;
+function __sui_store(elm2) {
+  elm2 = elm2 || document.body;
+  this.Get = function(key) {
+    return elm2.getAttribute("data:" + key);
+  };
+  this.Set = function(key, value) {
+    elm2.setAttribute("data:" + key, value);
+  };
+  this.GetJSON = function(key) {
+    const value = elm2.getAttribute("json:" + key);
+    if (value && value != "") {
+      try {
+        const res = JSON.parse(value);
+        return res;
+      } catch (e) {
+        const message = e.message || e || "An error occurred";
+        console.error(`[SUI] Event Handler Error: ${message}`, elm2);
+        return null;
+      }
+    }
+    return null;
+  };
+  this.SetJSON = function(key, value) {
+    elm2.setAttribute("json:" + key, JSON.stringify(value));
+  };
+  this.GetData = function() {
+    return this.GetJSON("__component_data") || {};
+  };
+}
+</script>
+
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen" s:ns="page__dog_2">
+
+  <!-- <div class="container mx-auto p-4"> -->
+    <div>
+  <div>Request Body:{{$request.body}}</div>
+  <div>User Name:{{$payload.username[0]}}</div>
+  <div>Password:{{$payload.password[0]}}</div>
+  <ul>
+    <li s:for="dogs2" s:for-item="dog" s:for-index="idx" s:if="idx==1">
+      <div>{{dog.v1}}</div>
+    </li>
+  </ul>
+  <ul>
+    <li s:for="dogs" s:for-item="dog" s:for-index="idx">
+      <div>{{dog}}</div>
+    </li>
+  </ul>
+  <ul>
+    <li s:for="dogs3">
+      <div>{{index}}-{{item}}</div>
+    </li>
+  </ul>
+</div>
+
+  <!-- </div> -->
+
+  <!-- JAVASCRIPTS -->
+
+
+
+
+
+<script name="config" type="json">
+{"cache_store":"","cache":0,"data_cache":0,"root":"/demo","title":"","guard":""}
+</script>
+
+</body></html>

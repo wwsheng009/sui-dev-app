@@ -1,0 +1,20 @@
+<div>
+  <div>Request Body:{{$request.body}}</div>
+  <div>User Name:{{$payload.username[0]}}</div>
+  <div>Password:{{$payload.password[0]}}</div>
+  <ul>
+    <li s:for="dogs2" s:for-item="dog" s:for-index="idx" s:if="idx==1">
+      <div>{{dog.v1}}</div>
+    </li>
+  </ul>
+  <ul>
+    <li s:for="dogs" s:for-item="dog" s:for-index="idx">
+      <div>{{dog}}</div>
+    </li>
+  </ul>
+  <ul>
+    <li s:for="dogs3">
+      <div>{{index}}-{{item}}</div>
+    </li>
+  </ul>
+</div>
